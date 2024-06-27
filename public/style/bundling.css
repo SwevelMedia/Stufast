@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap");
+
+#detail-bundling .label-category {
+
+  width: auto;
+
+  display: inline-block;
+
+  background-color: #FFD361;
+
+  border-radius: 10px;
+
+  font-weight: 500;
+
+  font-size: 0.8rem;
+
+}
+
+
+#detail-bundling .item-number {
+
+  background-color: #ECEBF3;
+
+  border-radius: 5px;
+
+  padding: 10px;
+
+}
+
+#detail-bundling .ringkasan {
+
+  background-color: #f3f4f6;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+}
+
+#detail-bundling .ringkasan-list li {
+
+  margin-bottom: 0.5rem;
+
+}
+
+#detail-bundling .info-hemat {
+
+  padding: 0.8rem;
+
+  background-color: #c6f7c4;
+
+  border-radius: 10px;
+
+  color: #2A8728;
+
+}
+
+#detail-bundling .bundling-icon {
+
+  width: 15%;
+
+  object-fit: contain;
+
+}
+
+
+
+/*# sourceMappingURL=bundling.css.map */
+

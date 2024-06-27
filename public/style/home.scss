@@ -1,0 +1,375 @@
+@import '_base';
+
+@mixin padding-container() {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+// hero
+#hero {
+    height: 89vh;
+    text-align: right;
+
+    .content-container {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 22vh;
+    }
+
+    .content {
+        text-align: left;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .app-btn{
+            padding: .8rem 2rem;
+        }
+    }
+
+    .image {
+        height: 100%;
+    }
+
+    .image img {
+        height: 100%;
+    }
+}
+
+// why choose us
+#why-choose-us {
+    @include padding-container();
+    background-color: $color-gray-home;
+
+    h1 {
+        @include title();
+    }
+
+    .no {
+        font-weight: bolder;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            margin-top: 0;
+            right: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    .no::after {
+        content: ' ';
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--no-color);
+        margin-right: 1.2rem;
+        margin-top: .9rem;
+        border-radius: 0px 1rem;
+    }
+
+    .item {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 1.2rem;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+}
+
+// choose course
+#choose-course {
+    @include padding-container();
+
+    h1 {
+        @include title();
+    }
+
+    .tags {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        .item {
+            &.active {
+                font-weight: bold;
+
+                a {
+                    color: $color-black;
+                }
+            }
+
+            a {
+                color: $color-gray-1;
+            }
+        }
+    }
+
+    .text-primary-color{
+        color: $color-primary;
+        font-weight: bold
+    }
+}
+
+// training
+#training {
+    @include padding-container();
+
+    h1 {
+        @include title();
+    }
+}
+
+// webinar
+#webinar {
+    @include padding-container();
+    background-color: $color-gray-home;
+
+    h1 {
+        @include title();
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-bottom: 3rem;
+
+        a {
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .active {
+            font-weight: bolder;
+        }
+    }
+}
+
+#author {
+    @include padding-container();
+
+    h1 {
+        @include title();
+    }
+
+    .slick-slide {
+        padding: 2rem 1rem;
+    }
+}
+
+// our partner
+#our-partner {
+    @include padding-container();
+    margin-bottom: 3rem;
+    background-color: $color-gray-home;
+
+    h1 {
+        @include title();
+    }
+
+    #our-partner-container {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .item {
+        width: 10%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+// artikel
+#artikel {
+    @include padding-container();
+
+    h1 {
+        @include title();
+    }
+
+    .artikel-item {
+        .image {
+            position: relative;
+
+            img {
+                min-width: 8rem;
+                width: 100%;
+                height: 32rem;
+                object-fit: cover;
+                border-radius: 14px;
+                border: 1px solid $color-gray;
+            }
+
+            .gradient {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgb(0, 43, 80);
+                // background: linear-gradient(0deg, rgba(0, 43, 80, 1) 0%, rgba(0, 43, 91, 1) 20%, rgba(255, 255, 255, 1) 100%);
+                background: linear-gradient(0deg, $color-primary 0%, $color-secondary 20%, rgba(255, 255, 255, 1) 100%);
+                border-radius: 14px;
+                opacity: 0.8;
+            }
+
+            .gradient.active{
+                background: linear-gradient(0deg, $color-primary 30%, $color-secondary 40%, rgba(255, 255, 255, 1) 100%);
+            }
+
+            .content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 1rem;
+                color: $color-white;
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                span{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+// testimoni
+#testimoni {
+    h1 {
+        @include title();
+        margin-bottom: 4rem;
+    }
+
+    .testimoni-wrapper {
+        position: relative;
+        min-height: 30rem;
+
+        .ornament1 {
+            position: absolute;
+            bottom: 3rem;
+            left: 10rem;
+        }
+
+        .ornament2 {
+            position: absolute;
+            top: -4rem;
+            right: 17rem;
+        }
+    }
+
+    .testimoni-slick {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .slider {
+        padding: {
+            top: 1rem;
+            bottom: 1.5rem;
+        };
+    }
+
+    // .slick-list {
+    //     padding-left: 0 !important;
+    //     padding-right: 10rem !important;
+    // }
+
+    .slick-arrow {
+        bottom: -34px;
+    }
+
+    .slick-next {
+        right: 30px;
+        top: auto;
+    }
+
+    .slick-prev {
+        top: auto;
+        right: 225px;
+        left: auto;
+    }
+
+    .slick-dots {
+        width: auto;
+        align-items: center;
+        right: 60px;
+    }
+
+    .slick-slide {
+        padding: 2rem 1.5rem;
+    }
+
+    .slick-dots li button:before {
+        font-size: .8rem;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+        font-size: 24px;
+    }
+
+    .testimoni-container {
+        display: flex !important;
+        @include card-setting();
+        width: 50%;
+
+        img {
+            width: 10rem;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: $card-border-radius;
+            border-bottom-left-radius: $card-border-radius;
+        }
+
+        .content {
+            padding: 1rem;
+        }
+
+        .title {
+            font-size: 1rem;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            margin-bottom: .8rem;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+* {
+
+    font-size: 15px;
+
+}
+
+
+
+.full-width {
+
+    width: 100%;
+
+}
+
+
+
+#subtitle {
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+}
+
+
+
+#btnPaid {
+
+    border-radius: 7px;
+
+    background-color: orange;
+
+    color: white;
+
+    border-style: none;
+    
+
+}
+
+
+

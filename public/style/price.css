@@ -1,0 +1,100 @@
+body {
+    background-color: #f2f2f2;
+  }
+
+  .pricing-header {
+    background-color: #14141c;
+    color: #fff;
+    padding: 100px 0;
+  }
+
+  .card {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+  }
+
+  .card-footer {
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+  }
+
+  .price {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .period {
+    font-size: 24px;
+    color: #555;
+  }
+
+  .feature-list {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  .feature-list li {
+    margin-bottom: 10px;
+  }
+
+  .feature-list i {
+    color: #248043;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .btn-success {
+    background-color: #248043;
+    border-color: #248043;
+  }
+
+  .btn-success:hover{
+    background-color: #165025;
+    border-color: #165025;
+  }
+
+  .btn-success:active {
+    background-color: #165025;
+    border-color: #165025;
+  }
+
+  .btn-success:focus {
+    box-shadow: none;
+  }
+
+  .btn-outline-success {
+    color: #248043;
+    border-color: #248043;
+  }
+
+  .btn-outline-success:hover {
+    background-color: #248043;
+    color: #fff;
+  }
+
+  .btn-block {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 992px) {
+    .pricing-header {
+      padding: 150px 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .feature-list {
+      column-count: 2;
+      column-gap: 40px;
+    }
+  }

@@ -1,0 +1,44 @@
+@import '_base';
+
+$color-label: #FFD361;
+
+#detail-bundling {
+    .label-category {
+        width: auto;
+        display: inline-block;
+        background-color: $color-label;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: .8rem;
+    }
+
+    .item-number {
+        background-color: $color-gray-2;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .ringkasan {
+        background-color: $color-gray-3;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .ringkasan-list {
+        li {
+            margin-bottom: .5rem;
+        }
+    }
+
+    .info-hemat {
+        padding: .8rem;
+        background-color: #c6f7c4;
+        border-radius: 10px;
+        color: #2A8728;
+    }
+
+    .bundling-icon {
+        width: 15%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,295 @@
+@import '_base';
+
+$color-select-tag: #6DAA82;
+
+#courses {
+    .breadcrumb {
+        font-weight: 500;
+
+        .active {
+            color: $color-primary
+        }
+    }
+
+    .courses-list {
+        background-color: $color-gray-home;
+    }
+
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .btn-filter-wrapper {
+        position: relative;
+
+        .filter-container {
+            position: absolute;
+            top: 3rem;
+            right: 0;
+            background-color: $color-white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 0 40px 10px rgba(0, 0, 0, .1);
+            z-index: 1;
+            width: 280px;
+
+            .filter-container__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+    
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+    
+                a {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+
+    .courses-list {
+        .nav-link {
+            border: none;
+            color: $color-gray-1;
+
+            &.active {
+                color: $color-black;
+                font-weight: bold;
+            }
+        }
+
+        .nav-tabs {
+            border-bottom: none;
+        }
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .8rem;
+
+        .item {
+            padding: .5rem 1rem;
+            border-radius: 12px;
+            background-color: $color-select-tag;
+            color: $color-black;
+            opacity: .5;
+            font-weight: 500;
+            min-width: 5rem;
+            text-align: center;
+            cursor: pointer;
+
+            &.active {
+                background-color: $color-select-tag;
+                opacity: 1;
+            }
+        }
+    }
+
+    .courses-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        button {
+            border-radius: 4px;
+        }
+
+        .btn-pgn-wrapper {
+            display: flex;
+            gap: .6rem;
+            align-items: center;
+
+            button {
+                background-color: transparent;
+            }
+
+            .active {
+                color: $color-primary;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .sub-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        .item {
+            color: $color-gray-1;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+
+            &.active {
+                color: $color-black;
+            }
+        }
+    }
+
+    .courses-bundling {
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+
+        h1 {
+            color: $color-primary;
+            margin-left: 6rem;
+            margin-right: 6rem;
+        }
+    }
+
+    .bundle {
+        @include card-setting();
+        position: relative;
+        border: 1px solid $color-gray-1;
+
+        .label {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            background-color: $color-yellow;
+            color: $color-white;
+
+            padding: {
+                top: 10px;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+
+            font-size: .8rem;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        .label::after {
+            content: "";
+            position: absolute;
+            background-color: $color-yellow;
+            bottom: -15px;
+            right: 0;
+            width: 100%;
+            height: 20px;
+            border-bottom: 10px solid $color-white;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 10px solid transparent;
+        }
+
+        .content {
+            padding: 1rem;
+            margin-bottom: .5rem;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                padding-left: 1.5rem;
+                margin-bottom: 1.6rem;
+            }
+
+            li:before {
+                content: "\f058";
+                color: $color-yellow;
+                font-family: FontAwesome;
+                display: block;
+                position: absolute;
+                margin-left: -1.5em;
+                width: 1.5em;
+            }
+
+            li {
+                margin-bottom: .5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                line-height: 1.6rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                font-weight: bold;
+                line-height: 1.6rem;
+            }
+        }
+
+        .badges {
+            display: flex;
+            gap: .5rem;
+            margin-bottom: 1rem;
+
+            .item {
+                font-size: .75rem;
+                font-weight: 500;
+                padding: .3rem .8rem;
+                border-radius: 8px;
+                background-color: $color-secondary;
+                color: $color-white;
+            }
+        }
+
+        button {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+        }
+
+        .harga {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: $color-primary;
+
+            del {
+                font-size: .9rem;
+                color: $color-black;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .courses-bundlings {
+
+        .slick-list {
+            padding-left: 10px !important;
+            padding-right: 10rem !important;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: gray;
+            font-size: 26px;
+        }
+
+        .slick-arrow {
+            top: 0%;
+        }
+
+        .slick-next {
+            right: 40px;
+        }
+
+        .slick-prev {
+            right: 80px;
+            left: auto;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+    }
+}

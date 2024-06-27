@@ -1,0 +1,208 @@
+@import "_base";
+
+body {
+  background-color: $color-white;
+  overflow-x: hidden;
+}
+
+.error {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.btn {
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: $color-primary  !important;
+}
+
+.page-flex {
+  height: 100vh !important;
+  gap: 10%;
+}
+
+.logo {
+  position: relative;
+  right: 12.5% !important;
+}
+
+.mw-290 {
+  min-width: 290px;
+}
+
+#button {
+  border: 0;
+
+  &:disabled,
+  &.disable {
+    background-color: $color-gray-4  !important;
+    color: $color-secondary  !important;
+  }
+
+  &:active,
+  &.active {
+    background-color: $color-secondary  !important;
+    color: $color-white  !important;
+  }
+
+  &:hover, &.hover {
+    background-color: $color-primary  !important;
+  }
+}
+
+#googleButton {
+  position: relative;
+  display: flex;
+  background-color: transparent !important;
+  color: $color-black  !important;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  border: 1px solid $color-gray-5  !important;
+
+  img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: auto;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+form {
+  width: 290px;
+
+  .welcome-text {
+    font-weight: 400;
+  }
+
+  .sign-in-text {
+    font-weight: 700;
+    margin: 0 12px 0 0 !important;
+    font-size: 20px;
+  }
+
+  .info-text {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  #terms {
+    height: 15px;
+  }
+
+  .checkbox {
+    label.error {
+      display: none !important;
+    }
+  }
+
+  .form-label {
+    font-weight: 500;
+  }
+
+  input {
+    font-weight: 400;
+    border: 1px solid;
+    border-color: $color-gray-5;
+    border-radius: 7px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 12px;
+
+    &:focus-visible {
+      border: 1px solid $color-secondary;
+      border-radius: 7px;
+    }
+  }
+
+  #password,
+  #password_confirm {
+    border-radius: 7px 0 0 7px;
+    width: 85%;
+  }
+
+  #show-password,
+  #show-confirm {
+    border-radius: 0 7px 7px 0;
+  }
+
+  .option {
+    .checkbox {
+      label {
+        font-weight: 400;
+        font-size: 11px !important;
+        margin-left: 2px;
+        height: 15px;
+      }
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 11px !important;
+    }
+  }
+
+  .priv-pol {
+    margin-top: 0 !important;
+    text-align: start !important;
+  }
+
+  .sign-up {
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      color: $color-primary;
+    }
+  }
+
+  .horizontal {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #1f1f1f;
+  }
+
+  // }
+  .horizontal::before,
+  .horizontal::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+  }
+
+  .horizontal::after {
+    margin-left: 10px;
+  }
+
+  .horizontal::before {
+    margin-right: 10px;
+  }
+}
+
+a {
+  border: none !important;
+  padding: 0% !important;
+  width: auto;
+  border-radius: 30px;
+  background-color: transparent !important;
+
+  img {
+    //width: 290px;
+    height: 45px;
+  }
+}

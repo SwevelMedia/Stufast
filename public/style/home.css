@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap");
+
+
+#hero {
+
+  height: 89vh;
+
+  text-align: right;
+
+}
+
+
+#hero .content-container {
+
+  position: absolute;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 22vh;
+
+  padding-left: 10px;
+
+}
+
+#hero .content {
+
+  text-align: left;
+
+}
+
+#hero .content h1 {
+
+  font-size: 2rem;
+
+  font-weight: bold;
+
+  margin-bottom: 1.5rem;
+
+}
+
+#hero .content p {
+
+  font-size: 1.2rem;
+
+  line-height: 1.8rem;
+
+  margin-bottom: 2.5rem;
+
+}
+
+#hero .content .app-btn {
+
+  padding: 0.8rem 2rem;
+
+}
+
+#hero .image {
+
+  height: 100%;
+
+}
+
+#hero .image img {
+
+  height: 100%;
+
+}
+
+
+
+#why-choose-us {
+
+  padding-top: 2rem;
+
+  padding-bottom: 2rem;
+
+  margin-bottom: 1rem;
+
+  background-color: #F9FFF5;
+
+}
+
+#why-choose-us h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 4rem;
+
+}
+
+#why-choose-us .no {
+
+  font-weight: bolder;
+
+  position: relative;
+
+}
+
+#why-choose-us .no h2 {
+
+  position: absolute;
+
+  margin-top: 0;
+
+  right: 0;
+
+  font-size: 2rem;
+
+  font-weight: bold;
+
+}
+
+#why-choose-us .no::after {
+
+  content: " ";
+
+  display: inline-block;
+
+  width: 2.5rem;
+
+  height: 2.5rem;
+
+  background-color: var(--no-color);
+
+  margin-right: 1.2rem;
+
+  margin-top: 0.9rem;
+
+  border-radius: 0px 1rem;
+
+}
+
+#why-choose-us .item {
+
+  display: flex;
+
+  gap: 1rem;
+
+}
+
+#why-choose-us .content h2 {
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+
+  margin-top: 1.2rem;
+
+}
+
+#why-choose-us p {
+
+  line-height: 1.5rem;
+
+}
+
+
+
+#choose-course {
+
+  padding-top: 2rem;
+
+  /* padding-bottom: 2rem; */
+
+}
+
+#choose-course h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  /* margin-bottom: 2rem; */
+
+}
+
+#choose-course .tags {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+}
+
+#choose-course .tags .item.active {
+
+  font-weight: bold;
+
+}
+
+#choose-course .tags .item.active a {
+
+  color: #1F1F1F;
+
+}
+
+#choose-course .tags .item a {
+
+  color: #9ca3af;
+
+}
+
+#choose-course .text-primary-color {
+
+  color: #164520;
+
+  font-weight: bold;
+
+}
+
+
+
+#training {
+
+  padding-top: 2rem;
+
+  /* padding-bottom: 2rem; */
+
+}
+
+#training h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  /* margin-bottom: 2rem; */
+
+}
+
+
+#talent {
+
+  padding-top: 2rem;
+
+  padding-bottom: 2rem;
+
+}
+
+
+
+#webinar {
+
+  padding-top: 6rem;
+
+  padding-bottom: 6rem;
+
+  background-color: #F9FFF5;
+
+}
+
+#webinar h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 4rem;
+
+}
+
+#webinar .categories {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1.2rem;
+
+  margin-bottom: 3rem;
+
+}
+
+#webinar .categories a {
+
+  text-decoration: none;
+
+  font-size: 1rem;
+
+}
+
+#webinar .categories .active {
+
+  font-weight: bolder;
+
+}
+
+
+
+#author {
+
+  padding-top: 2rem;
+
+  padding-bottom: 2rem;
+
+  background: #F9FFF5;
+}
+
+#author #author-wrapper .card-author {
+ 
+  min-height: 350px;
+}
+
+
+#author-wrapper .card-author .star-container .stars{
+  position: absolute; 
+
+  bottom: 70px;
+
+  transform: scale(0.8);
+}
+
+#author h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+}
+
+#author .slick-slide {
+
+  padding: 2rem 1rem;
+
+}
+
+
+
+#our-partner {
+
+  padding-top: 2rem;
+
+  padding-bottom: 2rem;
+
+  margin-bottom: 1rem;
+
+  background: #F9FFF5;
+
+}
+
+#our-partner h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+}
+
+#our-partner #our-partner-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 5rem;
+
+}
+
+#our-partner .item {
+
+  width: 10%;
+
+}
+
+#our-partner .item img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+}
+
+
+
+#artikel {
+
+  padding-top: 2rem;
+
+  /* padding-bottom: 2rem; */
+
+}
+
+#artikel h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+}
+
+#artikel .artikel-item .image {
+
+  position: relative;
+
+}
+
+#artikel .artikel-item .image img {
+
+  min-width: 8rem;
+
+  width: 100%;
+
+  height: 32rem;
+
+  object-fit: cover;
+
+  border-radius: 14px;
+
+  border: 1px solid #D9D9D9;
+
+}
+
+#artikel .artikel-item .image .gradient {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background: rgb(0, 43, 80);
+
+  background: linear-gradient(0deg, #164520 0%, #248043 20%, rgb(255, 255, 255) 100%);
+
+  border-radius: 14px;
+
+  opacity: 0.8;
+
+}
+
+#artikel .artikel-item .image .gradient.active {
+
+  background: linear-gradient(0deg, #164520 30%, #248043 40%, rgb(255, 255, 255) 100%);
+
+}
+
+#artikel .artikel-item .image .content {
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  padding: 1rem;
+
+  color: #ffffff;
+
+}
+
+#artikel .artikel-item .image .content h2 {
+
+  font-size: 1.5rem;
+
+}
+
+#artikel .artikel-item .image .content p {
+
+  margin-bottom: 2rem;
+
+}
+
+#artikel .artikel-item .image .content span {
+
+  color: #ffffff;
+
+}
+
+
+
+#testimoni h1 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  margin-top: 2rem;
+
+  padding-top: 2rem;
+
+  padding-bottom: 2rem;
+
+}
+
+#testimoni .testimoni-wrapper {
+
+  position: relative;
+
+  min-height: 30rem;
+
+}
+
+#testimoni .testimoni-wrapper .ornament1 {
+
+  position: absolute;
+
+  bottom: 3rem;
+
+  right: 12rem;
+
+  transform: scale(0.5);
+
+}
+
+#testimoni .testimoni-wrapper .ornament2 {
+
+  position: absolute;
+
+  top: -5rem;
+
+  left: 12rem;
+
+  transform: scale(0.5);
+
+}
+
+#testimoni .testimoni-slick {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+}
+
+#testimoni .slider {
+
+  padding-top: 1rem;
+
+  padding-bottom: 1.5rem;
+
+}
+
+#testimoni .slick-arrow {
+
+  bottom: -34px;
+
+}
+
+#testimoni .slick-next {
+
+  right: 30px;
+
+  top: auto;
+
+}
+
+#testimoni .slick-prev {
+
+  top: auto;
+
+  right: 195px;
+
+  left: auto;
+
+}
+
+#testimoni .slick-dots {
+
+  width: auto;
+
+  align-items: center;
+
+  right: 60px;
+
+}
+
+#testimoni .slick-slide {
+
+  padding: 2rem 1.5rem;
+
+}
+
+#testimoni .slick-dots li button:before {
+
+  font-size: 15px;
+
+}
+
+#testimoni .slick-prev:before,
+
+#testimoni .slick-next:before {
+
+  color: black;
+
+  font-size: 24px;
+
+}
+
+#testimoni .testimoni-container {
+
+  display: flex !important;
+
+  border-radius: 0.6rem;
+
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.1);
+
+  background-color: #ffffff;
+
+  width: 100%;
+
+  height: 250px;
+
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+
+
+}
+
+#testimoni .testimoni-container:hover {
+
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.4);
+
+}
+
+#testimoni .testimoni-container img {
+
+  width: 10rem;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  border-top-left-radius: 0.6rem;
+
+  border-bottom-left-radius: 0.6rem;
+
+
+}
+
+#testimoni .testimoni-container .content {
+
+  padding: 1rem;
+
+}
+
+#testimoni .testimoni-container .title {
+
+  font-size: 0.1rem;
+
+}
+
+#testimoni .testimoni-container .name {
+
+  font-size: 1rem;
+
+  text-align: center;
+
+  font-weight: bolder;
+
+  margin-bottom: 0.8rem;
+
+}
+
+
+
+/*# sourceMappingURL=home.css.map */
+

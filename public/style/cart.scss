@@ -1,0 +1,98 @@
+@import '_base';
+
+$color-voucher: #70BD81;
+
+#cart {
+    .breadcrumb {
+        font-weight: 500;
+
+        .active {
+            color: $color-primary
+        }
+    }
+
+    .section-no-login {
+        width: 30rem;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .cart-btn-remove {
+        background-color: transparent;
+    }
+
+    .cart-list {
+        table {
+            tr {
+                th:not(:first-child) {
+                    text-align: center;
+                }
+
+                td {
+                    gap: 12px;
+
+                    button {
+                        img {
+                            width: 40px;
+                        }
+                    }
+
+                    img {
+                        width: 110px;
+                    }
+
+                    .item-thumbnail {
+                        border-radius: 6px;
+                        border: 1px solid $color-gray-1;
+                    }
+
+                    .discount {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        width: 35px;
+                        height: 35px;
+                        font-size: .8rem;
+                        right: 0;
+                        top: -30px;
+                        color: white;
+                        background-color: #FFA629;
+                        transform: rotate(10deg);
+                    }
+
+                    .strike {
+                        text-decoration: line-through;
+                        color: #F24822;
+                        position: relative;
+                    }
+
+                    .price {
+                        text-align: center;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .voucher-order-total {
+        .order-total {
+            div {
+                h6 {
+                    font-size: 20px
+                }
+
+                gap: 100px
+            }
+        }
+    }
+}

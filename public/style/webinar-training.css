@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+  font-family: "Plus Jakarta Sans";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+}
+
+
+
+p {
+
+  font-family: "Plus Jakarta Sans";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-size: 16px;
+
+  color: #262626;
+
+  margin-bottom: 0 !important;
+
+}
+
+
+
+button {
+
+  border: none !important;
+
+  background-color: rgba(0, 42, 91, 0);
+
+}
+
+
+
+.hide {
+
+  display: none;
+
+}
+
+
+
+main .navigation p {
+
+  font-family: "Plus Jakarta Sans";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  color: #bdbdbd;
+
+}
+
+main .navigation p a {
+
+  color: #002B5B;
+
+  text-decoration: none;
+
+  font-family: "Plus Jakarta Sans";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+}
+
+.container3 {
+
+  gap: 30px;
+
+}
+
+.containert .detail {
+
+  width: min-content;
+
+}
+
+.container .detail .category {
+
+  background-color: #164520;
+
+  color: white;
+
+  width: max-content;
+
+  padding: 6px 15px;
+
+  border-radius: 8px;
+
+}
+
+.container .detail .banner {
+
+  width: 300px;
+
+}
+
+.container .detail .icon-group {
+
+  gap: 20px;
+
+}
+
+.container .detail .icon-group .icon-description p {
+
+  font-size: 14px;
+
+  color: #797979;
+
+}
+
+.container .detail .description {
+
+  text-align: justify;
+
+}
+
+.containert .detail {
+
+  width: 100%;
+
+  margin-top: 125px;
+
+}
+
+.container .detail .order-card {
+
+  border-radius: 8px;
+
+  padding: 20px;
+
+  background-color: #F2F4F6;
+
+}
+
+.container .detail .order-card .free-text {
+
+  color: #2A8728;
+
+}
+
+.container .detail .order-card ul {
+
+  padding-left: 27px;
+
+}
+
+.container .detail .order-card .discount-info {
+
+  background-color: #D8FAD7;
+
+  color: #2A8728;
+
+  border-radius: 7px;
+
+}
+
+.container .detail .order-card button {
+
+  font-weight: 600;
+
+  border: none;
+
+  width: 100%;
+
+  height: 40px;
+
+  border-radius: 10px;
+
+  background-color: #164520;
+
+  color: white;
+
+}
+
+.container .right-side .order-card .add-to-cart {
+
+  background-color: white;
+
+  color: black;
+
+}
+
+.app-btn {
+
+  background-color: #164520;
+
+  color: #ffffff;
+
+  padding: 0.7rem 1.2rem;
+
+  border-radius: 8px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+
+  white-space: nowrap;
+
+}
+
+.app-btn:hover {
+
+  background-color: #248043;
+
+}
+
+.btn-full {
+
+  width: 100%;
+
+}
+
+.button-secondary {
+
+  background-color: #ffffff;
+
+  color: #164520;
+
+  padding: 0.55rem 0.9rem;
+
+  border-radius: 0.4rem;
+
+  border: 1px solid #164520;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  font-size: 1rem;
+
+}
+
+.button-secondary:hover {
+
+  background-color: #164520;
+
+  color: #ffffff;
+
+}
+
+
+/*# sourceMappingURL=webinar-training.css.map */
+

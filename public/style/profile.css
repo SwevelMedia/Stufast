@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap");
+
+p {
+
+  font-size: 12px;
+
+}
+
+
+
+h5 {
+
+  font-size: 16px;
+
+}
+
+
+/* 
+.image img {
+
+  width: 100%;
+
+  height: 12rem;
+
+  margin-bottom: 1.5rem;
+
+  object-fit: cover;
+
+  border-radius: 0.6rem;
+
+  border: 1px solid #d9d9d9;
+
+} */
+
+
+
+.course-image {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  align-items: center;
+
+}
+
+
+
+p.font-weight-light,
+
+h1.font-weight-light,
+
+h2.font-weight-light,
+
+h3.font-weight-light,
+
+h4.font-weight-light,
+
+h5.font-weight-light {
+
+  font-weight: 200;
+
+  line-height: 22px;
+
+  color: #525252;
+
+}
+
+p.font-weight-bold,
+
+h1.font-weight-bold,
+
+h2.font-weight-bold,
+
+h3.font-weight-bold,
+
+h4.font-weight-bold,
+
+h5.font-weight-bold {
+
+  font-weight: 600;
+
+}
+
+
+
+#user-courses .body p {
+
+  margin: 0;
+
+}
+
+.form-label{
+  color: #164520;
+}
+
+.col-1 {
+  background-color: #164520; 
+  color: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 2px solid #164520;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 15px;
+  width: 3cm;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-2 {
+  
+  background-color: transparent; 
+  color: #164520;
+  border: 2px solid #164520;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 15px; 
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 3cm;
+}
+
+.btn-1 {
+  
+  background-color: transparent; 
+  color: black;
+  border: 1px solid #164520;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 12px; 
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 5cm;
+  height: 1.5cm;
+  
+}
+
+
+/* navbar-profile */
+.mb-2 {
+  padding-bottom: px;
+}
+
+
+.col-auto {
+
+  width: auto;
+
+}
+
+
+
+.col-12x {
+
+  width: 12%;
+
+}
+
+
+
+.col-15 {
+
+  width: 15%;
+
+}
+
+
+
+.col-20 {
+
+  width: 20%;
+
+}
+
+
+
+.fit-content {
+
+  width: fit-content;
+
+}
+
+
+
+.bg-green {
+
+  background-color: #248043;
+
+  width: fit-content;
+
+  border-radius: 5px;
+
+  padding: 3px 9px;
+
+}
+
+.bg-green > * {
+
+  color: white;
+
+}
+
+.bg-green > p {
+
+  font-size: 12px;
+
+}
+
+
+
+.ellipsis {
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 1;
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+}
+
+
+
+.card {
+
+  background-color: #f2f4f6;
+
+  border-radius: 20px;
+
+  border: 0;
+
+  height: auto;
+
+  padding: 25px 20px 25px 20px;
+
+}
+
+.card .image-circle {
+
+  width: 100px;
+
+  height: 100px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  box-shadow: 0px 0.5px 4px 2.5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Padding default untuk semua ukuran layar */
+.side-bar {
+
+  background-color: #f2f4f6;
+
+  border-radius: 20px;
+
+  border: 0;
+
+  height: 100%;
+
+  padding: 25px 20px;
+
+  max-height: 715px;
+
+}
+
+
+
+
+/*sidebar */
+
+/* Desktop (misalnya, lebar minimum 769px) */
+@media (min-width: 769px) {
+  .side-bar {
+    padding: 25px 20px; /* Sesuaikan padding untuk layar desktop */
+  }
+}
+
+/* Tablet (misalnya, lebar antara 481px dan 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .side-bar {
+    padding: 25px 15px; /* Sesuaikan padding untuk layar tablet */
+    display: flex;
+    flex-direction: column; /* Menjadikan elemen anak mengikuti arah kolom */
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+/* Ponsel (lebar maksimum 480px) */
+@media (max-width: 480px) {
+  .side-bar {
+    padding: 25px 5px; /* Sesuaikan padding untuk layar ponsel */
+  }
+}
+
+
+
+.side-bar > * {
+
+  margin: 6px -4px;
+
+}
+
+.side-bar > * .profile-icon {
+
+  width: 25px;
+
+  height: 25px;
+
+}
+
+.profile-sidebar{
+
+  padding-left: 2.5em;
+
+  padding-right: 2.5em;
+
+}
+
+
+
+.profile-sidebar:hover .profile-icon {
+
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(142deg) brightness(103%) contrast(104%) !important;
+
+}
+
+.profile-sidebar:active, .profile-sidebar.active {
+
+  background-color: #248043;
+
+  color: #ffffff;
+
+}
+
+.profile-sidebar:active .profile-icon, .profile-sidebar.active .profile-icon {
+
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(142deg) brightness(103%) contrast(104%) !important;
+
+}
+
+
+
+.profile {
+
+  max-height: 715px;
+
+  overflow-y: scroll;
+
+}
+
+.profile::-webkit-scrollbar {
+
+  position: absolute;
+
+  width: 8px;
+
+}
+
+.profile::-webkit-scrollbar-track {
+
+  background-color: #d9d9d9;
+
+  border-radius: 40px;
+
+}
+
+.profile::-webkit-scrollbar-thumb {
+
+  background-color: #747474;
+
+  border-radius: 40px;
+
+}
+
+.profile > * {
+
+  margin: 20px;
+
+}
+
+.profile > *:first-child {
+
+  margin-top: 0;
+
+}
+
+.profile > *:last-child {
+
+  margin-bottom: 0;
+
+}
+
+.profile > * .profile-data .card {
+
+  min-height: 358px;
+
+}
+
+.profile > * .course .webinar {
+
+  height: 120px;
+
+}
+
+.profile > * .course .webinar img {
+
+  height: 120px;
+
+}
+
+
+
+.col.referral .d-flex .card {
+
+  height: fit-content;
+
+  width: 100%;
+
+  padding: 10px 20px 10px 20px;
+
+  border-radius: 5px;
+
+}
+
+.col.referral .card {
+
+  height: fit-content;
+
+  width: 100%;
+
+  border-radius: 5px;
+
+}
+
+.col.referral .voucher-container {
+
+  padding: 15px 20px 15px 20px;
+
+}
+
+.col.referral .voucher-container h5 {
+
+  margin: 0;
+
+}
+
+.col.referral .voucher-container .voucher {
+
+  height: 30px;
+
+}
+
+.col.referral .rule {
+
+  padding: 50px 20px 50px 20px;
+
+}
+
+
+
+.btn-grey-200 {
+
+  background-color: #ecdef5;
+
+  border-radius: 12px;
+
+  border: 0;
+
+  width: inherit;
+
+}
+
+.btn-grey-200:hover {
+
+  background-color: #164520;
+
+  color: #ffffff;
+
+}
+
+.btn-grey-200:active {
+
+  background-color: #164520;
+
+  color: #ffffff;
+
+}
+
+
+
+div.btn-file {
+
+  background-color: #248043 !important;
+
+  color: #ffffff !important;
+
+  cursor: pointer;
+
+}
+
+div.btn-file > * {
+
+  cursor: pointer;
+
+}
+
+div.btn-file:hover, div.btn-file.hover {
+
+  background-color: #164520 !important;
+
+  color: #ffffff !important;
+
+}
+
+
+
+#editButton:disabled, #editButton.disable {
+
+  background-color: #D3D3D3 !important;
+
+  color: #248043 !important;
+
+}
+
+#editButton:active, #editButton.active {
+
+  background-color: #248043 !important;
+
+  color: #ffffff !important;
+
+}
+
+#editButton:hover, #editButton.hover {
+
+  background-color: #164520 !important;
+
+  color: #ffffff !important;
+
+}
+
+
+
+#date {
+
+  width: 100% !important;
+
+}
+
+
+
+.referral-code {
+
+  border: 0;
+
+  font-weight: 600;
+
+}
+
+.radio-label {
+  display: inline-block;
+  margin-right: 15px; /* Jarak antara radio button */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Gaya radio button yang disembunyikan (default browser) */
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Gaya radio button yang digunakan untuk menandai pilihan */
+.radio-checkmark {
+  position: relative;
+  display: inline-block;
+  width: 20px; /* Ukuran radio button */
+  height: 20px;
+  background-color: #fff; /* Warna latar belakang */
+  border: 1px solid #ccc; /* Garis tepi */
+  border-radius: 50%; /* Bentuk bulat */
+}
+
+fieldset {
+  overflow: hidden
+  
+}
+
+.some-class {
+  float: left;
+  clear: none;
+}
+
+label {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 0px 1em 0px 8px;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+
+.Bundling-badge{
+
+  width: 85px;
+
+  height: 25px;
+
+  border-radius: 5px;
+
+  padding: 2px 9px;
+
+  color: white;
+
+  font-weight: 700;
+
+  background-color: #F5C64C;
+
+}
+
+.Course-badge{
+
+  width: 85px;
+
+  height: 25px;
+
+  border-radius: 5px;
+
+  padding: 2px 9px;
+
+  color: white;
+
+  font-weight: 700;
+
+  background-color: #A9CAFD;
+
+}
+
+.Training-badge{
+
+  width: 85px;
+
+  height: 25px;
+
+  border-radius: 5px;
+
+  padding: 2px 9px;
+
+  color: white;
+
+  font-weight: 700;
+
+  background-color: #F32828;
+
+}
+
+.line-order {
+  border: none; /* Menghilangkan border default dari elemen hr */
+  background-color: green; /* Warna garis (dalam contoh ini, hijau) */
+
+  /* Media query untuk layar dengan lebar 768px atau kurang (perangkat seluler) */
+  @media (max-width: 820px) {
+    width: 230px; /* Garis akan menempati lebar penuh di perangkat seluler */
+  }
+
+  /* Media query untuk layar dengan lebar lebih besar dari 768px (laptop dan desktop) */
+  @media (min-width: 769px) {
+    width: 820px; /* Misalnya, garis akan menempati setengah lebar layar di laptop dan desktop */
+    margin: 0 auto; /* Untuk menempatkan garis di tengah */
+  }
+}
+
+/* Gambar responsif untuk layar hp dan tablet */
+@media (max-width: 820px) {
+  .foto-course {
+      max-width: 100%; /* Maksimum lebar sesuai dengan lebar layar */
+      height: auto; /* Tetap pertahankan rasio aspek */
+  }
+}
+
+/* Gambar dengan lebar tetap 215px untuk laptop atau layar yang lebih besar */
+@media (min-width: 821px) {
+  .foto-course {
+      width: 215px; /* Lebar gambar tetap 215px */
+      height: auto; /* Tetap pertahankan rasio aspek */
+  }
+}
+
+
+
+/*# sourceMappingURL=profile.css.map */
+

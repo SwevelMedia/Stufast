@@ -1,0 +1,285 @@
+.tag-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.tag-picker {
+    height: 2.5em;
+    border: none;
+    padding: 0%;
+}
+
+select[name='course-table_length'],
+select[name='table-user_length'] {
+    width: 100% !important;
+}
+
+
+.bg-ghost-sortable {
+    background-color: #e5efff;
+}
+
+.text-underline:hover {
+    text-decoration: underline;
+}
+
+.dragNdrop {
+    font-size: 30px;
+    cursor: grab;
+}
+
+.dragNdrop:active {
+    cursor: grabbing;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+// =================Quiz Accordion=========================
+
+.accordion-title {
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    color: white;
+}
+
+.accordion-header {
+    background-color: #3783df
+}
+
+.accordion-header:hover {
+    background-color: #70a3ff
+}
+
+.accordion-item {
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.quiz-section {
+
+
+    .swiper-wrapper {
+        height: min-content;
+    }
+
+    .quiz-title {
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    .quiz-title:hover {
+        color: #494949;
+        border: 1px solid rgb(184, 184, 184);
+    }
+
+    .quiz-title:focus {
+        border: none;
+        color: black;
+        cursor: text;
+
+    }
+
+    .quiz-option-list {
+        //    margin: 0px 20px;
+        gap: 4%;
+        row-gap: 10px;
+
+        div {
+            width: 46%;
+            gap: 12px;
+            height: 3.5em;
+            border-radius: 10px;
+            background-color: #E4E8EE;
+
+            input[type='text'] {
+                width: 100%;
+            }
+
+            input[type='radio'] {
+                width: 18px;
+                border-radius: 0px;
+                border: 2px solid #002B5B;
+                height: 18px;
+                -webkit-appearance: none;
+
+            }
+
+            input[type='radio']:checked {
+                // background-color: #5c48a3;
+                background-image: url('../image/course-detail/check.svg');
+                background-repeat: no-repeat;
+                background-size: 18px;
+                background-position: -2px -2px;
+                background-color: #002B5B;
+            }
+
+            label {
+                color: #002B5B;
+                padding: 16px 0px;
+            }
+
+            p {
+                max-width: 90%;
+                text-align: start;
+                cursor: pointer;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                margin: 0;
+                color: #000000;
+            }
+
+            p:hover {
+                color: #0054ab;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+
+// ===================Contact Us=================
+
+.w-300 {
+    width: 350px !important;
+}
+
+.w-500 {
+    width: 500px !important;
+}
+
+.email-user {
+    max-width: 203px;
+    white-space: pre-line;
+}
+
+.btn-default {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.user-question-text {
+    --max-lines: 3;
+    --line-height: 1.2;
+    overflow: hidden;
+    max-height: calc(var(--max-lines)*1em*var(--line-height));
+    position: relative;
+}
+
+.expand-btn {
+    appearance: none;
+    height: auto;
+    border-radius: 2px;
+}
+
+.expand-btn::before {
+    content: "Expand";
+    display: flex;
+    justify-content: center;
+    font-size: 11.5px;
+    color: #004b99;
+    font-weight: 600;
+}
+
+.expand-btn:checked:before {
+    content: "Hide";
+}
+
+.expand-btn:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.user-question-text:has(+ .expand-btn:checked) {
+    max-height: none;
+}
+
+.ss-value-delete {
+    width: auto !important;
+}
+
+
+// ===================BUNDLING================================
+
+
+
+
+
+.bundling-list-course {
+    height: 25em;
+    border: 1px solid #b6bbc3;
+    border-radius: 7px;
+    overflow-x: auto;
+}
+
+.bundling-dragndrop-panel {
+    gap: 13px;
+}
+
+.bundling-search-course {
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.selection-bundling-list,
+.selection-course-list {
+    border-radius: 7px;
+    background: #acc6ede0;
+    overflow-x: auto;
+    height: 23em;
+}
+
+.selection-bundling-list {
+    height: 26em;
+}
+
+.selection-course-bundling {
+    border-radius: 7px;
+}
+
+.course-list-choice {
+    border-radius: 7px;
+    background-color: #3a58ff;
+
+    .course-name {
+        width: 95%;
+        font-size: 13px;
+    }
+
+    .right-side-course {
+        width: min-content;
+        text-align: end;
+
+        i {
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.dnd-course-list {
+    cursor: grab;
+}
+
+.dnd-course-list:hover,
+.dnd-course-list:active {
+    background-color: #5770ff;
+
+}
+
+.dnd-course-list:active {
+    cursor: grabbing;
+}
+
+
+/*# sourceMappingURL=contact-list.css.map */

@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap");
+
+@mixin font($weight) {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: $weight;
+}
+
+@mixin transition($time) {
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -o-transition: all $time ease;
+    -ms-transition: all $time ease;
+    transition: all $time ease;
+}
+
+h3,
+h4 {
+    @include font($weight: 600);
+}
+
+p {
+    @include font($weight: 400)
+}
+
+button {
+    border: none !important;
+    background-color: rgba(0, 0, 128, 0);
+}
+
+@mixin status-popup() {
+    height: 100%;
+    width: max-content;
+    text-align: center;
+
+    .loading-icon {
+        height: 180px;
+    }
+
+    .success-icon {
+        width: 70px;
+    }
+
+    h5 {
+        @include font($weight: 700);
+        color: black;
+        font-size: 22px;
+    }
+
+    p {
+        color: #8F8585;
+    }
+}
+
+.status-loading {
+    font-size: 20px;
+    color: black;
+    @include status-popup();
+
+}
+
+.status-success {
+    padding-top: 50px;
+    @include status-popup();
+}
+
+.status-warning {
+    padding-top: 50px;
+    @include status-popup();
+    width: auto;
+}
+
+
+
+.contact-popup {
+    width: auto;
+    gap: 15px;
+
+    .contact-info {
+        text-align: start !important;
+        width: 550px;
+
+        div {
+            gap: 30px
+        }
+    }
+
+    form {
+        text-align: start !important;
+        gap: 12px;
+        display: block;
+
+        input,
+        textarea {
+            border-radius: 7px;
+        }
+
+        input[name="email"] {
+            border: 1px solid #9B9B9B;
+            height: 50px;
+        }
+
+        label {
+            white-space: nowrap;
+            background-color: #E5EAF0;
+            max-width: min-content;
+            padding: 8px 10px;
+            color: #164520;
+            border-radius: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #164520;
+            border: none;
+            padding: 7px 7px;
+            color: white;
+            height: 40px;
+            @include font($weight: 500)
+        }
+
+        .file-group {
+            gap: 12px;
+
+            .filename {
+                width: 234px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+
+        // #image-upload {
+
+        //     width: 100%;
+        // }
+    }
+}
+
+// remove auto focus border in swal close button
+.swal2-close:focus {
+    box-shadow: none !important;
+}
+
+.hide {
+    display: none;
+}
+
+
+.main-section {
+    gap: 40px;
+
+    .navigation {
+        p {
+            @include font($weight: 400);
+
+            a {
+                color: #002B5B;
+                text-decoration: none;
+                @include font($weight: 600)
+            }
+        }
+    }
+
+    .faq {
+        .faq-list {
+            .faq-title {
+                p {
+                    @include font($weight: 400);
+                }
+            }
+
+            .faq-item {
+                .faq-title {
+                    .expand {
+                        @include transition($time: 0.3s);
+                        // border: 2px solid black;
+                        background-image: url('../image/faq/expand.png');
+                        width: 60px;
+                        height: 60px;
+                        background-repeat: no-repeat;
+                        transform: scale(0.8);
+                    }
+                }
+
+                .collapse>div {
+                    padding-left: 0 !important;
+                }
+
+                .collapse.show>div {
+                    padding-left: 0 !important;
+                }
+
+                .collapsing>div {
+                    padding-left: 0 !important;
+                }
+            }
+        }
+    }
+
+    .right-side {
+
+        button {
+            padding: 7px 8px;
+            font-size: 15px;
+            border-radius: 7px;
+            background-color: #164520;
+            color: white;
+        }
+    }
+}
