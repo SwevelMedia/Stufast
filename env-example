@@ -88,19 +88,26 @@ MAIL_FROM_NAME="${APP_NAME}"
 #--------------------------------------------------------------------
 
 # Google Oauth
-go_client_id = 211665904840-p3ejql66ornjphtpmgf0mme69vejmok9.apps.googleusercontent.com
-go_client_secret = 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
+# go_client_id = 211665904840-p3ejql66ornjphtpmgf0mme69vejmok9.apps.googleusercontent.com
+go_client_id =
+# go_client_secret = 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
+go_client_secret = 
 
 # Midtrans
-mid_server_key = SB-Mid-server-fsGyFij_BAQ0VOAoqtCkYJcm
-mid_client_key = SB-Mid-client-i7tbil0jAeyBPJhN
+# mid_server_key = SB-Mid-server-fsGyFij_BAQ0VOAoqtCkYJcm
+mid_server_key = 
+# mid_client_key = SB-Mid-client-i7tbil0jAeyBPJhN
+mid_client_key = 
 
 # Firebase
-fcm_auth_key = AAAAptLLXKM:APA91bHU4V7FDugA7-765vMc_n5kjkTuCv8--64bhdilrkQoJK_di6q-MRYjHhuAA9G5UtCSSF8HWwNADzwM8t8sYksfOTV_j59Yi_Q9Ut45S5ohzJERRlAoV6mM_xKS5GSC5G6HUobg
+# fcm_auth_key = AAAAptLLXKM:APA91bHU4V7FDugA7-765vMc_n5kjkTuCv8--64bhdilrkQoJK_di6q-MRYjHhuAA9G5UtCSSF8HWwNADzwM8t8sYksfOTV_j59Yi_Q9Ut45S5ohzJERRlAoV6mM_xKS5GSC5G6HUobg
+fcm_auth_key = 
 
 # WA Gateway
-wag_api_key = 8QWgoPxMltt9mgLZHOt3MOxi5rX2gt
-wag_number = 6285601645865
+# wag_api_key = 8QWgoPxMltt9mgLZHOt3MOxi5rX2gt
+wag_api_key = 
+# wag_number = 6285601645865
+wag_number = 
 
 
 
